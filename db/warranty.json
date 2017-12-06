@@ -1,0 +1,173 @@
+{
+    "rooms":{
+        "r oom0":{
+            "name": "Kitchen"
+        },
+        "room1":{
+            "name": "Living"
+        },
+        "room2":{
+            "name": "Master_bedroom"
+        },
+        "room3":{
+            "name": "Bedroom"
+        },
+        "room4":{
+            "name": "Dining"
+        },
+        "room5":{
+            "name": "Master_bath"
+        },
+        "room6":{
+            "name": "Bathroom"
+        },
+        "room7":{
+            "name": "Office"
+        },
+        "room8":{
+            "name": "Sunroom"
+        },
+        "room9":{
+            "name": "Gameroom"
+        },
+        "room10":{
+            "name": "Garage"
+        },
+        "room11":{
+            "name": "Other"
+        }
+    },
+
+    "areas":{
+        "area0":{
+            "name": "House"
+        },
+        "area1":{
+            "name": "Patio_outside"
+        },
+        "area2":{
+            "name": "Garage"
+        },
+        "area3":{
+            "name": "Other"
+        }
+    },
+
+    "types":{
+        "type0":{ 
+            "name": "electronics"
+        },
+        "type1":{
+            "name": "tools"
+        },
+        "type2":{
+            "name": "appliances"
+        },
+        "type3":{
+            "name": "vehicles"
+        },
+        "type4":{
+            "name": "furniture"
+        },
+        "type5":{
+            "name": "other"
+        }
+    },
+
+
+    "products":{
+        "product0":{
+            "roomId": "room1",
+            "areaId": "area0",
+            "typeId": "type0",
+            "name": "TV",
+            "description": "75 inch QLEDTV",
+            "modle_number": "UN75UK47500SF",
+            "brand": "Samsung",
+            "purchase_date": "11/25/16",
+            "purchase_location": "Electronic Express",
+            "purchase_location_address": "5108 Old Hickory Blvd., Hermitage, TN 37076",
+            "purchase_location_phone": "615-846-1208",
+            "manufacutrers_warranty": "true",
+            "manufacturers-warranty_company": "Samsung",
+            "manufacturers-warranty_terms": "2 year",
+            "manufacturers-warranty_expiration": "11/25/18",
+            "extended_warranty": "false",
+            "extended_warranty_company": "Asurion",
+            "extended_warranty_term": "5 years",
+            "purchase_price": "$2,500.00",
+            "picture": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5754/5754302_rd.jpg",
+            "uid": "12345"
+        },
+        "product1":{
+            "roomId": "room9",
+            "areaId": "area0",
+            "typeId": "type4",
+            "name": "Sectional",
+            "description": "Custon 144 inch by 180 inch modular sectional",
+            "modle_number": "ABC123321",
+            "brand": "Broyhill",
+            "purchase_date": "11/25/14",
+            "purchase_location": "B.F. Meyers",
+            "purchase_location_address": "117 French St., Goodlettsville, TN 37073",
+            "purchase_location_phone": "615-859-1301",
+            "manufacutrers_warranty": "false",
+            "manufacturers-warranty_company": "Broyhill",
+            "manufacturers-warranty_terms": "2 year",
+            "manufacturers-warranty_expiration": "11/25/16",
+            "extended_warranty": "false",
+            "extended_warranty_company": "B.F. Meyers",
+            "extended_warranty_term": "5 years",
+            "purchase_price": "$5,000.00",
+            "picture": "http://fjellkjeden.net/wp-content/uploads/2017/05/Broyhill-Sectional-Sofas-15-with-Broyhill-Sectional-Sofas.jpg",
+            "uid": "12345"
+        },
+        "product2":{
+            "roomId": "room7",
+            "areaId": "area0",
+            "typeId": "type0",
+            "name": "Macbook",
+            "description": "2016 15 inch Macbook Pro",
+            "modle_number": "C02SW2Q0GTFL",
+            "brand": "Apple",
+            "purchase_date": "6/1/17",
+            "purchase_location": "Apple Store",
+            "purchase_location_address": "2126 Abbott Martin Rd., Nashville, TN 37215",
+            "purchase_location_phone": "615-514-2430",
+            "manufacutrers_warranty": "true",
+            "manufacturers-warranty_company": "Apple",
+            "manufacturers-warranty_terms": "2 year",
+            "manufacturers-warranty_expiration": "6/1/19",
+            "extended_warranty": "true",
+            "extended_warranty_company": "Apple Care",
+            "extended_warranty_term": "5 years",
+            "purchase_price": "$2,000.00",
+            "picture": "https://images.techhive.com/images/article/2016/11/macbook_pro_15_late2016_review-adam_front-100693205-large.jpg",
+            "uid": "54321"
+        },
+        "product3":{
+            "roomId": "room10",
+            "areaId": "area2",
+            "typeId": "type3",
+            "name": "Bus",
+            "description": "2017 Nissan Armada",
+            "modle_number": "NissanNissanNissan",
+            "brand": "Nissan",
+            "purchase_date": "8/24/17",
+            "purchase_location": "Nissan of Coolsprings",
+            "purchase_location_address": "212 Comtide Ct., Franklin, TN 37067",
+            "purchase_location_phone": "615-224-8301",
+            "manufacutrers_warranty": "true",
+            "manufacturers-warranty_company": "Nissan",
+            "manufacturers-warranty_terms": "5 year/60K miles",
+            "manufacturers-warranty_expiration": "8/24/22",
+            "extended_warranty": "false",
+            "extended_warranty_company": "",
+            "extended_warranty_term": "",
+            "purchase_price": "$62,250.00",
+            "picture": "https://14794cb074070f2635be-909c741dfbd93d74800510af85411879.ssl.cf1.rackcdn.com/JN8AY2NE5H9707989/977a8ddb07a7d7ee4a8b8d9bd020eb5d.jpg",
+            "uid": "54321"
+        }
+    }
+}
+    
