@@ -1,6 +1,6 @@
 {
     "rooms":{
-        "r oom0":{
+        "room0":{
             "name": "Kitchen"
         },
         "room1":{
@@ -38,6 +38,7 @@
         }
     },
 
+
     "areas":{
         "area0":{
             "name": "House"
@@ -52,6 +53,7 @@
             "name": "Other"
         }
     },
+
 
     "types":{
         "type0":{ 
@@ -99,6 +101,7 @@
             "picture": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5754/5754302_rd.jpg",
             "uid": "12345"
         },
+
         "product1":{
             "roomId": "room9",
             "areaId": "area0",
@@ -122,6 +125,7 @@
             "picture": "http://fjellkjeden.net/wp-content/uploads/2017/05/Broyhill-Sectional-Sofas-15-with-Broyhill-Sectional-Sofas.jpg",
             "uid": "12345"
         },
+
         "product2":{
             "roomId": "room7",
             "areaId": "area0",
@@ -145,6 +149,7 @@
             "picture": "https://images.techhive.com/images/article/2016/11/macbook_pro_15_late2016_review-adam_front-100693205-large.jpg",
             "uid": "54321"
         },
+
         "product3":{
             "roomId": "room10",
             "areaId": "area2",
@@ -171,3 +176,4 @@
     }
 }
     
+
