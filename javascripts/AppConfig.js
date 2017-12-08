@@ -33,6 +33,11 @@ app.config(function($routeProvider){
 		templateUrl: 'partials/auth.html',
 		controller: 'AuthCtrl'
 	})
+	.when("/products/home", {
+		templateUrl: 'partials/home.html',
+		controller: 'HomeCtrl',
+		resolve: {isAuth}
+	})
 	.when("/products/details/:id", {
 		templateUrl: 'partials/product_details.html',
 		controller: 'ProductDetailsCtrl',
@@ -48,5 +53,5 @@ app.config(function($routeProvider){
 		controller: 'ProductEditCtrl',
 		resolve: {isAuth}
 	})
-	.otherwise('/login');
+	.otherwise('/auth');
 });
