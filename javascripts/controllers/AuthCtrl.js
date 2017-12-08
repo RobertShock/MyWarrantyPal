@@ -1,7 +1,7 @@
 'use strict';
 
-app.controller("AuthCtrl", function($location, $rootScope, $scope, AutService){
-	$scope.auth = () => {
+app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthService){
+	$scope.aut = () => {
 		AuthService.authenticateGoogle().then((result) =>{ 
 			$rootScope.uid = result.user.uid;
 			$scope.$apply(() =>{
