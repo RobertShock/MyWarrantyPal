@@ -99,7 +99,7 @@
             "extended_warranty_term": "5 years",
             "purchase_price": "$2,500.00",
             "picture": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5754/5754302_rd.jpg",
-            "uid": "12345"
+            "uid": "qJ2rbG3tnoNr9HVUwW20zC8yzTF3"
         },
 
         "product1":{
@@ -123,7 +123,7 @@
             "extended_warranty_term": "5 years",
             "purchase_price": "$5,000.00",
             "picture": "http://fjellkjeden.net/wp-content/uploads/2017/05/Broyhill-Sectional-Sofas-15-with-Broyhill-Sectional-Sofas.jpg",
-            "uid": "12345"
+            "uid": "qJ2rbG3tnoNr9HVUwW20zC8yzTF3"
         },
 
         "product2":{
@@ -146,8 +146,8 @@
             "extended_warranty_company": "Apple Care",
             "extended_warranty_term": "5 years",
             "purchase_price": "$2,000.00",
-            "picture": "https://images.techhive.com/images/article/2016/11/macbook_pro_15_late2016_review-adam_front-100693205-large.jpg",
-            "uid": "54321"
+            "picture": "https://cnet2.cbsistatic.com/img/363IxTBLcm8g0j0dFwwdZ-G7f5I=/830x467/2017/06/06/552793fa-911b-44a7-a3fb-44a1307803fd/apple-macbook-pro-touch-bar-15-inch-2017-4201.jpg",
+            "uid": "qJ2rbG3tnoNr9HVUwW20zC8yzTF3"
         },
 
         "product3":{
@@ -171,7 +171,7 @@
             "extended_warranty_term": "",
             "purchase_price": "$62,250.00",
             "picture": "https://14794cb074070f2635be-909c741dfbd93d74800510af85411879.ssl.cf1.rackcdn.com/JN8AY2NE5H9707989/977a8ddb07a7d7ee4a8b8d9bd020eb5d.jpg",
-            "uid": "54321"
+            "uid": "qJ2rbG3tnoNr9HVUwW20zC8yzTF3"
         }
     }
 }
