@@ -18,6 +18,38 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
         });
     };
 
+    const getAreas = () => {
+        let areas = [];
+        return $q((resolve, reject) => {
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/areas.json`).then((results) => {
+                let fbAreas = results.data;
+                    Object.keys(fbAreas).forEach((key) => {
+                        fbAreas[key].id = key;
+                        areas.push(fbAreas[key]);
+                    });
+                resolve(areas);
+            }).catch((err) => {
+                console.log('error in fbAreas', err);
+            });
+        });
+    };
+
+    const getTypes = () => {
+        let types = [];
+        return $q((resolve, reject) => {
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/types.json`).then((results) => {
+                let fbTypes = results.data;
+                    Object.keys(fbTypes).forEach((key) => {
+                        fbTypes[key].id = key;
+                        types.push(fbTypes[key]);
+                    });
+                resolve(types);
+            }).catch((err) => {
+                console.log('error in fbTypes', err);
+            });
+        });
+    };
+
     const getProducts = (userUid) => {
         let products = [];
         return $q((resolve, reject) => {
@@ -34,9 +66,6 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
         });
     };
 
-    // const getRooms = (roomId) => {
-    //     $http.get(`${FIREBASE_CONFIG.databaseURL}/products/${roomId}.json`);
-    // };
 
     const getSingleProduct = (productId) => {
         return $http.get(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`);
@@ -80,5 +109,5 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
             "uid": product.uid
         };
     };
-    return {postNewProduct, getProducts, getRooms, deleteProduct, updateProduct, createProductObj, getSingleProduct};
+    return {postNewProduct, getProducts, getRooms, getAreas, getTypes, deleteProduct, updateProduct, createProductObj, getSingleProduct};
 });
