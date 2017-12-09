@@ -9,11 +9,16 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
 </head>
-  <body ng-app="MyWarrantyPalApp">
 
-    <div ng-include="'./partials/navbar.html'"></div>
-    <div class="col-xs-8 col-xs-offset-2" ng-view></div>
-    
+  <body ng-app="MyWarrantyPalApp">
+      <div>
+          <div ng-include="'./partials/navbar.html'"></div>
+          <div class="col-xs-3">
+            <div ng-include="'./partials/left_navbar.html'" ng-controller="LeftNavCtrl"></div>
+          </div>
+          <div class="col-xs-9" ng-view></div>
+        </div>
+
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     
     <script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>

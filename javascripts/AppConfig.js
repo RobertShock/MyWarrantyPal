@@ -55,3 +55,4 @@ app.config(function($routeProvider){
 	})
 	.otherwise('/auth');
 });
+
