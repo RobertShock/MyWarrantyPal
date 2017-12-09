@@ -1,10 +1,10 @@
 'use strict';
 
-app.controller('LeftNavCtrl', function($rootScope, $scope, ProductService) {
+app.controller('LeftNavCtrl', function($rootScope, $scope, RoomsService, TypesService, AreasService) {
 
 
 	const getRooms = () => {
-		ProductService.getRooms($rootScope.uid).then((results) =>{
+		RoomsService.getRooms($rootScope.uid).then((results) => {
             $scope.rooms = results;
             console.log('$scope.rooms', $scope.rooms);
 		}).catch((err) => {
@@ -15,7 +15,7 @@ app.controller('LeftNavCtrl', function($rootScope, $scope, ProductService) {
     getRooms();
 
     const getAreas = () => {
-        ProductService.getAreas($rootScope.uid).then((results) => {
+        AreasService.getAreas($rootScope.uid).then((results) => {
             $scope.areas = results;
             console.log('$scope.areas', $scope.areas);
         }).catch((err) => {
@@ -26,7 +26,7 @@ app.controller('LeftNavCtrl', function($rootScope, $scope, ProductService) {
     getAreas();
 
     const getTypes = () => {
-        ProductService.getTypes($rootScope.uid).then((results) => {
+        TypesService.getTypes($rootScope.uid).then((results) => {
             $scope.types = results;
             console.log('$scope.types', $scope.types);
         }).catch((err) => {
@@ -35,5 +35,6 @@ app.controller('LeftNavCtrl', function($rootScope, $scope, ProductService) {
     };
 
     getTypes();
+    
 });
 
