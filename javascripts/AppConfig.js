@@ -33,6 +33,11 @@ app.config(function($routeProvider){
 		templateUrl: 'partials/auth.html',
 		controller: 'AuthCtrl'
 	})
+	.when("/products/left_navbar", {
+		templateUrl: 'partials/left_navbar.html',
+		controller: 'LeftNavCtrl',
+		resolve: {isAuth}
+	})
 	.when("/products/home", {
 		templateUrl: 'partials/home.html',
 		controller: 'HomeCtrl',
@@ -55,3 +60,4 @@ app.config(function($routeProvider){
 	})
 	.otherwise('/auth');
 });
+

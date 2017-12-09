@@ -1,6 +1,7 @@
 'use strict';
 
 app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
+    
     const getProducts = (userUid) => {
         let products = [];
         return $q((resolve, reject) => {
@@ -17,6 +18,7 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
         });
     };
 
+
     const getSingleProduct = (productId) => {
         return $http.get(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`);
     };
@@ -29,8 +31,8 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
         return $http.delete(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`);
     };
 
-    const updateContact = (contact, contactId) => {
-          return $http.put(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`, JSON.stringify(product));
+    const updateProduct = (productId) => {
+          return $http.put(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`, JSON.stringify(updateProduct));
     };
 
     const createProductObj = (product) => {
@@ -59,5 +61,5 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
             "uid": product.uid
         };
     };
-    return {postNewProduct, getProducts, deleteProduct, updateProuduct, createProductObj, getSingleProduct};
+    return {postNewProduct, getProducts, deleteProduct, updateProduct, createProductObj, getSingleProduct};
 });

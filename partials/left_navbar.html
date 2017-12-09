@@ -1,10 +1,22 @@
 
 <!-- SIDE NAVBAR --> 
-<div class="sideNav">
-    <div class="col-sm-3 margin-fixed">
-    <div class="sidebar-nav">
-        
-    </div>
-    </div>
+<div class='text-left' id='sideNav'>
+    <h2>Search by:</h2>
 </div>
+
+
+<div class='text-left' id='view'>
+    <div ng-app="leftNavApp" ng-controller="LeftNavCtrl"> 
+        <h3>Room</h3>
+            <select ng-model="rooms" ng-options="room.name for room in rooms track by room.id"></select>
+        <h3>Area</h3>
+            <select ng-model="areas" ng-options="area.name for area in areas track by area.id"></select>
+        <h3>Type</h3>
+            <select ng-model="rooms" ng-options="type.name for type in types track by type.id"></select>
+
+
         
+        
+    
+        
+     
