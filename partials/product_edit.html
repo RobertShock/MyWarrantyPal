@@ -1,0 +1,124 @@
+<div class="text-center" id="edit_products" ng-controller="ProductEditCtrl">
+    <div>
+        <form class="form-horizontal" name="editProductForm">
+
+            <div class="text-right">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-success" ng-click="editSubmit(product)" ng-disabled="editProductForm.$invalid">Save Changes</button>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="name" class="col-sm-4 control-label">Name</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="name" ng-model="product.name" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="col-sm-4 control-label">Description</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="description" ng-model="product.description" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="modle_number" class="col-sm-4 control-label">Modle Number</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="modle_number" ng-model="product.modle_number" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="brand" class="col-sm-4 control-label">Brand</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="brabd" ng-model="product.brand" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="purchase_date" class="col-sm-4 control-label">Purchase Date</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="purchase_date" ng-model="product.purchase_date" ng-required="true"> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="purchase_location" class="col-sm-4 control-label">Purchase Location</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="purchase_location" ng-model="product.purchase_location" ng-required="true"> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="purchase_location_address" class="col-sm-4 control-label">Purchase Location Address</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="purchase_location_address" ng-model="product.purchase_location_address" ng-required="true">
+                </div>
+            </div>             
+
+            <div class="form-group">
+                <label for="purchase_location_phone" class="col-sm-4 control-label">Purchase Location Phone</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="purchase_location_phone" ng-model="product.purchase_location_phone" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="manufacutrers_warranty" class="col-sm-4 control-label">Manufacturers Warranty</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="manufacutrers_warranty" ng-model="product.manufacutrers_warranty" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="manufacturers_warranty_company" class="col-sm-4 control-label">Manufacturers Warranty Company</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="manufacturers_warranty_company" ng-model="product.manufacturers_warranty_company" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="manufacturers_warranty_terms" class="col-sm-4 control-label">Manufacturers Warranty Terms</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="manufacturers_warranty_terms" ng-model="product.manufacturers_warranty_terms" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="manufacturers_warranty_expiration" class="col-sm-4 control-label">Manufacturers Warranty Expiration</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="manufacturers_warranty_expiration" ng-model="product.manufacturers_warranty_expiration" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="extended_warranty" class="col-sm-4 control-label">Extended Warranty</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="extended_warranty" ng-model="product.extended_warranty" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="extended_warranty_company" class="col-sm-4 control-label">Extended Warranty Company</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="extended_warranty_company" ng-model="product.extended_warranty_company" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="extended_warranty_term" class="col-sm-4 control-label">Extended Warranty Term</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="extended_warranty_term" ng-model="product.extended_warranty_term" ng-required="true">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="purchase_price" class="col-sm-4 control-label">Purchase Price</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="purchase_price" ng-model="product.purchase_price" ng-required="true">
+                </div> 
+            </div>         
+        </form>
+    </div>
+</div>
