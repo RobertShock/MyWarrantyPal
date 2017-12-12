@@ -1,7 +1,19 @@
-.sideNav {
-  background-color: hotpink; }
+#sideNav {
+  background-color: lightgray;
+  color: gray;
+  padding: 10px 20px 20px 20px; }
 
 .product_images {
   height: 300px;
   width: 300px;
   padding: 10px 20px 10px 20px; }
+
+#homeProductCards {
+  height: 425px;
+  width: 350px; }
+
+.navbar-brand {
+  font-size: 200%; }
+
+body {
+  background-color: gray; }

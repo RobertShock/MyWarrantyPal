@@ -13,6 +13,10 @@ app.controller("HomeCtrl", function($location, $rootScope, $scope, ProductServic
 
 	getProducts();
 
+	$scope.productDetail = (productId) => {
+		$location.path(`/products/details/${productId}`);
+	};
+
 	$scope.deleteProduct = (productId) => {
 		ProductService.deleteProduct(productId).then((result) => {
 			getProducts();
@@ -22,11 +26,11 @@ app.controller("HomeCtrl", function($location, $rootScope, $scope, ProductServic
 	};
 	
 	$scope.editProduct = (productId) => {
-		$location.path(`/products/product_edit/${productId}`);
+		$location.path(`/products/edit/${productId}`);
 	};
 	
 	$scope.goToNewProducts = () => {
-		$location.path("/products/product_new");
+		$location.path(`/products/product_new`);
 	};
 
 });
