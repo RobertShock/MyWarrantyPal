@@ -31,8 +31,8 @@ app.service("ProductService", function($http, $q, $rootScope, FIREBASE_CONFIG) {
         return $http.delete(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`);
     };
 
-    const updateProduct = (productId) => {
-          return $http.put(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`, JSON.stringify(updateProduct));
+    const updateProduct = (product, productId) => {
+          return $http.put(`${FIREBASE_CONFIG.databaseURL}/products/${productId}.json`, JSON.stringify(product));
     };
 
     const createProductObj = (product) => {

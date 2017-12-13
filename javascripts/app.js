@@ -2,4 +2,4 @@
 
 'use strict';
 
-const app = angular.module("MyWarrantyPalApp", ["ngAnimate", "ngRoute", "ngSanitize"]);
+const app = angular.module("MyWarrantyPalApp", ["ngAnimate", "ngRoute", "ngSanitize", "ui.bootstrap"]);

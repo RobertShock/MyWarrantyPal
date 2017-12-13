@@ -11,14 +11,17 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
         });
     };
 
+    getProduct();
+
     $scope.editSubmit = (product) => {
         product.uid = $rootScope.uid;
         ProductService.updateProduct(product, $routeParams.id).then(() => {
-            $location.path("/product/home");
+            $location.path("/products/home");
         }).catch((err) => {
             console.log('error in submitForm', err);
         });
     };
 
-    getProduct();
+    
 });
+
