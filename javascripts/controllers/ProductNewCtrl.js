@@ -9,7 +9,7 @@ app.controller("ProductNewCtrl", function($location, $rootScope, $scope, Product
 		$scope.newProduct.uid=$rootScope.uid;
 		let newProduct = ProductService.createProductObj ($scope.newProduct);
 		ProductService.postNewProduct(newProduct).then((results) => {
-			$location.path("/products/home");
+			$location.path(`/products/home`);
 		}).catch((error) => {
 			console.log("error in postNewProduct", error);
 		});
