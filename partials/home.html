@@ -5,7 +5,7 @@
         <span class="input-group-btn"><button class="btn btn-primary" type="button">Search</button></span>
     </div><br>
     <div id="view products">
-        <div ng-repeat="product in products | filter: searchText" class="col-sm-4 col-md-4 product-card">
+        <div ng-repeat="product in products | LeftNavFilter | filter: searchText" class="col-sm-4 col-md-4 product-card">
             <div class="thumbnail product" id="homeProductCards">
                 <div class="caption">
                     <div class="pannel-heading">
