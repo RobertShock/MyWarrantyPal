@@ -12,7 +12,7 @@
                 <h3>Area</h3>
                 <select ng-model="$root.navFilters.areaId" ng-options="area.id as area.name for area in areas track by area.id"></select>
                 <h3>Type</h3>
-                <select  ng-model="$root.navFilters.typeId" ng-options="type.id as type.name for type in types track by type.id"></select>
+                <select  ng-model="$root.navFilters.typeId" ng-value="type.typeId" ng-options="type.id as type.name for type in types track by type.id"></select>
             </div>
         </div>
     </div>

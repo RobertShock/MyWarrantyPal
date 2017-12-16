@@ -1,5 +1,4 @@
 #sideNav {
-  background-color: lightgray;
   color: gray;
   padding: 10px 20px 20px 20px;
   position: fixed;
@@ -19,6 +18,9 @@
 
 .navbar-brand {
   font-size: 200%; }
+
+#navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 body {
   background-color: gray; }
