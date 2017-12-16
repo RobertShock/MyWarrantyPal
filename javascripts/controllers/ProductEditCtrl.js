@@ -23,7 +23,6 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
     const getRooms = () => {
         RoomsService.getRooms($rootScope.uid).then((results) => {
             $scope.rooms = results;
-            console.log('$scope.rooms', $scope.rooms);
         }).catch((err) => {
             console.log('error in getRooms', err);
         });
@@ -32,7 +31,6 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
     const getAreas = () => {
         AreasService.getAreas($rootScope.uid).then((results) => {
             $scope.areas = results;
-            console.log('$scope.areas', $scope.areas);
         }).catch((err) => {
             console.log('error in getAreas', err);
         });
@@ -41,7 +39,6 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
     const getTypes = () => {
         TypesService.getTypes($rootScope.uid).then((results) => {
             $scope.types = results;
-            console.log('$scope.types', $scope.types);
         }).catch((err) => {
             console.log('error in getTypes', err);
         });

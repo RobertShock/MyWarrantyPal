@@ -1,11 +1,11 @@
 'use strict';
 
 app.controller("HomeCtrl", function($location, $rootScope, $scope, ProductService) {
+	$scope.products = [];
 
 	const getProducts = () => {
 		ProductService.getProducts($rootScope.uid).then((results) =>{
             $scope.products = results;
-            console.log("results", results);
 		}).catch((err) =>{
 			console.log('error in getProducts', err);
 		});
