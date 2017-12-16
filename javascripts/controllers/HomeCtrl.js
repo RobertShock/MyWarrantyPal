@@ -1,6 +1,7 @@
 'use strict';
 
 app.controller("HomeCtrl", function($location, $rootScope, $scope, ProductService) {
+	$scope.products = [];
 
 	const getProducts = () => {
 		ProductService.getProducts($rootScope.uid).then((results) =>{

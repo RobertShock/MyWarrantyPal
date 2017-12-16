@@ -2,16 +2,14 @@
 
 app.controller('LeftNavCtrl', function($rootScope, $scope, RoomsService, TypesService, AreasService) {
     $rootScope.navFilters = {
-        roomId: "",
-        areaId: "",
-        typeId: ""
+        roomId: "room1000",
+        areaId: "area1000",
+        typeId: "type1000"
     };
-
-    let all = {name: "All", id: ""};
 
 	const getRooms = () => {
 		RoomsService.getRooms($rootScope.uid).then((results) => {
-            results.unshift(all);
+            results.unshift({name: "ALL", id: "room1000"});
             $scope.rooms = results;
 		}).catch((err) => {
 			console.log('error in getRooms', err);
@@ -22,7 +20,7 @@ app.controller('LeftNavCtrl', function($rootScope, $scope, RoomsService, TypesSe
 
     const getAreas = () => {
         AreasService.getAreas($rootScope.uid).then((results) => {
-            results.unshift(all);
+            results.unshift({name: "ALL", id: "area1000"});
             $scope.areas = results;
         }).catch((err) => {
             console.log('error in getAreas', err);
@@ -33,7 +31,7 @@ app.controller('LeftNavCtrl', function($rootScope, $scope, RoomsService, TypesSe
 
     const getTypes = () => {
         TypesService.getTypes($rootScope.uid).then((results) => {
-            results.unshift(all);
+            results.unshift({name: "ALL", id: "type1000"});
             $scope.types = results;
         }).catch((err) => {
             console.log('error in getTypes', err);
