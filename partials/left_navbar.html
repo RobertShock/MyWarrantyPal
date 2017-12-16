@@ -8,11 +8,11 @@
         <div class='text-left'>
             <div >
                 <h3>Room</h3>
-                <select ng-model="$root.leftNavFilters.roomId"  ng-value="roomId" ng-options="room.id as room.name for room in rooms track by room.id"></select>
+                <select ng-model="$root.navFilters.roomId"  ng-value="roomId" ng-options="room.id as room.name for room in rooms track by room.id"></select>
                 <h3>Area</h3>
-                <select ng-model="$root.leftNavFilters.areaId" ng-value="areaId" ng-options="area.id as area.name for area in areas track by area.id"></select>
+                <select ng-model="$root.navFilters.areaId" ng-value="areaId" ng-options="area.id as area.name for area in areas track by area.id"></select>
                 <h3>Type</h3>
-                <select  ng-model="$root.leftNavFilters.typeId" ng-value="typeId" ng-options="type.id as type.name for type in types track by type.id"></select>
+                <select  ng-model="$root.navFilters.typeId" ng-value="typeId" ng-options="type.id as type.name for type in types track by type.id"></select>
             </div>
         </div>
     </div>
