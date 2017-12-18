@@ -1,5 +1,5 @@
 #sideNav {
-  color: gray;
+  color: cornflowerblue;
   padding: 10px 20px 20px 20px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -22,5 +22,8 @@
 #navbar-inverse {
   background-color: rgba(0, 0, 0, 0.5); }
 
-body {
-  background-color: gray; }
+.product_details {
+  width: 300px; }
+
+#newForm {
+  color: lightyellow; }
