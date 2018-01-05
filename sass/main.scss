@@ -1,3 +1,15 @@
+#Navbar {
+    color: cornflowerblue;
+    background-color:  black;
+    position: fixed;
+    width: 98%;
+    z-index: 2;
+}
+
+.searchbar {
+    z-index: 1;
+}
+
 #sideNav {
     color: cornflowerblue;
     padding: 10px 20px 20px 20px;
@@ -6,6 +18,14 @@
     height: 100%;
     width: 20%;
     padding: 20px;
+}
+
+#edit_product {
+    color: cornflowerblue;
+}
+
+#myProducts {
+    color: cornflowerblue;
 }
 
 .product_images {
@@ -17,14 +37,11 @@
 #homeProductCards {
     height: 425px;
     width: 350px;
+    background-color: lightgray;
 }
 
 .navbar-brand {
     font-size: 200%;
-}
-
-#navbar-inverse {
-    background-color: rgba(0, 0, 0, 0.5);    
 }
 
 .product_details{
@@ -36,7 +53,8 @@
 }
 
 
-.auth-image{
+#login{
     position: absolute;
     left: 25%;
+    color: cornflowerblue;
 }
