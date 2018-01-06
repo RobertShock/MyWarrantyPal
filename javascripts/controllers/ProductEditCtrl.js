@@ -45,13 +45,13 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
     };
 
     const findIndex = (arrayName, id) => {
-        let shit = 0;
+        let apple = 0;
         arrayName.forEach((thing, index) => {
             if(thing.id === id){
-                shit = index;
+                apple = index;
             }
         });
-        return shit;
+        return apple;
     };
 
     const getProduct = () => {
@@ -70,7 +70,6 @@ app.controller("ProductEditCtrl", function($location, $rootScope, $routeParams, 
     getTypes();
     getAreas();
     getRooms();
-
 
     getProduct();
     

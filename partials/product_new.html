@@ -30,7 +30,7 @@
                     <label for="name" class="col-sm-4 control-label">Type</label>
                     <div class="col-sm-8">
                         <div class="form-group" class="col-sm-12" ng-app="editDropdown" ng-controller="ProductEditCtrl">
-                        <select ng-model="newProduct.typeId" ng-options="type.id as type.type for type in types track by type.id"></select>
+                        <select ng-model="newProduct.typeId" ng-options="type.id as type.name for type in types track by type.id"></select>
                         </div>
                     </div>
                 </div>
