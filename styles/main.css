@@ -1,21 +1,33 @@
 #Navbar {
-  color: cornflowerblue;
-  background-color: black;
+  font-weight: 500;
+  font-size: 125%;
+  background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
   width: 98%;
   z-index: 2; }
 
+.navLinks {
+  color: cornflowerblue; }
+
+#myWarPalApp {
+  margin-left: 0;
+  color: cornflowerblue; }
+
 .searchbar {
   z-index: 1; }
+
+#signIn {
+  color: cornflowerblue; }
 
 #sideNav {
   color: cornflowerblue;
   padding: 10px 20px 20px 20px;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   height: 100%;
   width: 20%;
-  padding: 20px; }
+  padding: 20px;
+  z-index: 2; }
 
 #edit_product {
   color: cornflowerblue; }
@@ -30,8 +42,14 @@
 
 #homeProductCards {
   height: 425px;
-  width: 350px;
-  background-color: lightgray; }
+  width: 350px; }
+
+#product_details {
+  color: cornflowerblue; }
+
+#detailsCard {
+  position: relative;
+  left: 107%; }
 
 .navbar-brand {
   font-size: 200%; }
